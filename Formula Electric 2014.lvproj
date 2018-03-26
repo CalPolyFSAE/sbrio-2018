@@ -4112,9 +4112,6 @@ AddOutputFilter chunkFilter
 			<Item Name="CAN Message.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/TX Library/CAN Message.ctl"/>
 			<Item Name="CAN TDMS Writer.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN TDMS Writer.vi"/>
 			<Item Name="CAN Transmit Loop.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/TX Library/CAN Transmit Loop.vi"/>
-			<Item Name="cvi_lvrt.dll" Type="Document" URL="cvi_lvrt.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="FormulaElectric2_FPGATarget_FPGA_8a5J0mMac2U.lvbitx" Type="Document" URL="../FPGA Bitfiles/FormulaElectric2_FPGATarget_FPGA_8a5J0mMac2U.lvbitx"/>
 			<Item Name="Init Queue.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/TX Library/Init Queue.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
