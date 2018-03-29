@@ -121,7 +121,6 @@
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_Math Plot Private Lib.lvlib" Type="Library" URL="/&lt;vilib&gt;/Math Plots/Plot Private Lib/NI_Math Plot Private Lib.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="niLvFPGAUserSpecifiedEmulationVISupport.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/rvi/customViForEmulation/niLvFPGAUserSpecifiedEmulationVISupport.lvclass"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="panelResize_tdms.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/panelResize_tdms.vi"/>
 				<Item Name="panelstate.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/panelstate.ctl"/>
@@ -760,7 +759,6 @@ AddOutputFilter chunkFilter
 				<Property Name="Mode" Type="Int">0</Property>
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">sbRIO-9627/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSSBRIO_9627FPGA_TARGET_FAMILYZYNQTARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
-				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/sbrio-2018/Formula Hybrid 2012 r1/FPGA/Sensor Library/FPGA.vi</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
 				<Property Name="SWEmulationSubMode" Type="UInt">1</Property>
 				<Property Name="SWEmulationVIPath" Type="Path">/C/Program Files (x86)/National Instruments/LabVIEW 2015/user.lib/Fan PDM Test Code.vi</Property>
@@ -3933,6 +3931,8 @@ AddOutputFilter chunkFilter
 					</Item>
 					<Item Name="vi.lib" Type="Folder">
 						<Item Name="_XNET Convert Time LV to U64.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/_XNET Convert Time LV to U64.vi"/>
+						<Item Name="Arm Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Arm Port (SPI).vi"/>
+						<Item Name="Calculate Divider.vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Public/Calculate Divider.vi"/>
 						<Item Name="CANFrameControl.ctl" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANFrameControl.ctl"/>
 						<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
 						<Item Name="CANWait.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANWait.vi"/>
@@ -3940,68 +3940,23 @@ AddOutputFilter chunkFilter
 						<Item Name="CANWaitRemoteWakeup.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANWaitRemoteWakeup.vi"/>
 						<Item Name="CANWaitTransmitComplete.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANWaitTransmitComplete.vi"/>
 						<Item Name="CANWrite.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANWrite.vi"/>
-						<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-						<Item Name="IP SPI&amp;I2C.lvlib" Type="Library" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Library/IP SPI&amp;I2C.lvlib"/>
+						<Item Name="Configure Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Configure Port (SPI).vi"/>
+						<Item Name="Initialize Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Initialize Port (SPI).vi"/>
+						<Item Name="IP Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/IP Port (SPI).vi"/>
 						<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 						<Item Name="niFPGA Boolean Crossing.vi" Type="VI" URL="/&lt;vilib&gt;/express/rvi/analysis/control/nonlinear/niFPGA Boolean Crossing.vi"/>
 						<Item Name="niFPGA BW CU Order 2 (16-bit).vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/measure/butterworth/templates/niFPGA BW CU Order 2 (16-bit).vi"/>
 						<Item Name="niFPGA BW CU Order 2 (32-bit).vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/measure/butterworth/templates/niFPGA BW CU Order 2 (32-bit).vi"/>
 						<Item Name="niFPGA I32xI32 MAC - FXP.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/utilities/niFPGA I32xI32 MAC - FXP.vi"/>
 						<Item Name="niFPGA I32xI32 MAC+ MSB.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/utilities/niFPGA I32xI32 MAC+ MSB.vi"/>
+						<Item Name="Private Data (SPI).ctl" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Type Def/Private Data (SPI).ctl"/>
+						<Item Name="Read Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Read Port (SPI).vi"/>
 						<Item Name="SCM - RT Types.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/Software Calibration Management/_CalPointResources/SCM - RT Types.ctl"/>
 						<Item Name="scm32.dll" Type="Document" URL="/&lt;vilib&gt;/addons/Software Calibration Management/_CalPointResources/scm32.dll"/>
+						<Item Name="Write Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Write Port (SPI).vi"/>
 						<Item Name="XNET Frame CAN.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Frame CAN.ctl"/>
 						<Item Name="XNET Frame Type CAN.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Frame Type CAN.ctl"/>
 					</Item>
-					<Item Name="AIR Status.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/AIR Status.ctl"/>
-					<Item Name="BMS Telemetry.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/BMS Telemetry.ctl"/>
-					<Item Name="BPS Driver.vi" Type="VI" URL="../Formula Hybrid 2012 r1/BPS Driver.vi"/>
-					<Item Name="Calculate Thermistor Temp.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Calculate Thermistor Temp.vi"/>
-					<Item Name="Dash LED Status.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Dash LED Status.ctl"/>
-					<Item Name="DashDriverInputs.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Dashboard/DashDriverInputs.ctl"/>
-					<Item Name="Decode Car State.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Decode Car State.vi"/>
-					<Item Name="Decode Charging State.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Decode Charging State.vi"/>
-					<Item Name="Decode Inverter Command Modes.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Decode Inverter Command Modes.vi"/>
-					<Item Name="Decode Inverter State.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Decode Inverter State.vi"/>
-					<Item Name="Decode VSM.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Decode VSM.vi"/>
-					<Item Name="Find unique elements.vi" Type="VI" URL="../Testing Code/Find unique elements.vi"/>
-					<Item Name="FPGA Telemetry.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/FPGA Telemetry.ctl"/>
-					<Item Name="Global Data.vi" Type="VI" URL="../Formula Hybrid 2012 r1/Global Data.vi"/>
-					<Item Name="Inverter Run Modes.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Inverter Run Modes.ctl"/>
-					<Item Name="Inverter States.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Inverter States.ctl"/>
-					<Item Name="Lap Statistics.ctl" Type="VI" URL="../Lap Statistics.ctl"/>
-					<Item Name="MC Current.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Current.ctl"/>
-					<Item Name="MC Faults.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Faults.ctl"/>
-					<Item Name="MC Flux.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Flux.ctl"/>
-					<Item Name="MC Internal Voltages.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Internal Voltages.ctl"/>
-					<Item Name="MC Mod Index and Flux Weakening.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Mod Index and Flux Weakening.ctl"/>
-					<Item Name="MC Position.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Position.ctl"/>
-					<Item Name="MC State.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC State.ctl"/>
-					<Item Name="MC Temp 1.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Temp 1.ctl"/>
-					<Item Name="MC Temp 2.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Temp 2.ctl"/>
-					<Item Name="MC Temp 3.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Temp 3.ctl"/>
-					<Item Name="MC Torque.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Torque.ctl"/>
-					<Item Name="MC Voltage.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Voltage.ctl"/>
-					<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
-						<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-					</Item>
-					<Item Name="Process Run Fault.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/Process Run Fault.vi"/>
-					<Item Name="Reason for Shutdown.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Reason for Shutdown.ctl"/>
-					<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
-						<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-					</Item>
-					<Item Name="Scale Can Temp.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Can Temp.vi"/>
-					<Item Name="Scale Cell Balance.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Cell Balance.vi"/>
-					<Item Name="Scale Cell Temp.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Cell Temp.vi"/>
-					<Item Name="Scale Cell Voltage.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Cell Voltage.vi"/>
-					<Item Name="Scale Output ADXL345.vi" Type="VI" URL="../Formula Hybrid 2012 r1/SPI/ADXL345/Scale Output ADXL345.vi"/>
-					<Item Name="SDashLEDs.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Dashboard/SDashLEDs.ctl"/>
-					<Item Name="SPI Parameters.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/SPI/SPI Parameters.ctl"/>
-					<Item Name="Subsystem Status Message.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Vehicle Status/Subsystem Status Message.ctl"/>
-					<Item Name="Subsystem Status Severity.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Vehicle Status/Subsystem Status Severity.ctl"/>
-					<Item Name="Subsystem Status.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Vehicle Status/Subsystem Status.ctl"/>
-					<Item Name="TDMS Init.vi" Type="VI" URL="../Formula Hybrid 2012 r1/TDMS Init.vi"/>
-					<Item Name="VSM States.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/VSM States.ctl"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="FPGA" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -4161,9 +4116,6 @@ AddOutputFilter chunkFilter
 			<Item Name="CAN Message.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/TX Library/CAN Message.ctl"/>
 			<Item Name="CAN TDMS Writer.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN TDMS Writer.vi"/>
 			<Item Name="CAN Transmit Loop.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/TX Library/CAN Transmit Loop.vi"/>
-			<Item Name="cvi_lvrt.dll" Type="Document" URL="cvi_lvrt.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="FormulaElectric2_FPGATarget_FPGA_8a5J0mMac2U.lvbitx" Type="Document" URL="../FPGA Bitfiles/FormulaElectric2_FPGATarget_FPGA_8a5J0mMac2U.lvbitx"/>
 			<Item Name="Init Queue.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/TX Library/Init Queue.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
@@ -4173,9 +4125,6 @@ AddOutputFilter chunkFilter
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NI-XNET Frame&amp;Log - Convert CAN to RAW.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/NI-XNET Frame&amp;Log - Convert CAN to RAW.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
