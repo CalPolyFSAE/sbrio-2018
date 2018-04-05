@@ -760,6 +760,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Mode" Type="Int">0</Property>
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">sbRIO-9627/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSSBRIO_9627FPGA_TARGET_FAMILYZYNQTARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
+				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/sbrio-2018/Formula Hybrid 2012 r1/FPGA/Sensor Library/FPGA.vi</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
 				<Property Name="SWEmulationSubMode" Type="UInt">1</Property>
 				<Property Name="SWEmulationVIPath" Type="Path">/C/Program Files (x86)/National Instruments/LabVIEW 2015/user.lib/Fan PDM Test Code.vi</Property>
@@ -4111,6 +4112,9 @@ AddOutputFilter chunkFilter
 			<Item Name="CAN Message.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/TX Library/CAN Message.ctl"/>
 			<Item Name="CAN TDMS Writer.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN TDMS Writer.vi"/>
 			<Item Name="CAN Transmit Loop.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/TX Library/CAN Transmit Loop.vi"/>
+			<Item Name="cvi_lvrt.dll" Type="Document" URL="cvi_lvrt.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="FormulaElectric2_FPGATarget_FPGA_8a5J0mMac2U.lvbitx" Type="Document" URL="../FPGA Bitfiles/FormulaElectric2_FPGATarget_FPGA_8a5J0mMac2U.lvbitx"/>
 			<Item Name="Init Queue.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/TX Library/Init Queue.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
