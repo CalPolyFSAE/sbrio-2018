@@ -463,7 +463,7 @@
 	</Item>
 	<Item Name="NI-sbRIO-9627-01c1617b" Type="RT Single-Board RIO">
 		<Property Name="alias.name" Type="Str">NI-sbRIO-9627-01c1617b</Property>
-		<Property Name="alias.value" Type="Str">10.0.1.119</Property>
+		<Property Name="alias.value" Type="Str">10.0.1.118</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,77D5;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">77D5</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
@@ -3952,6 +3952,55 @@ AddOutputFilter chunkFilter
 						<Item Name="XNET Frame CAN.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Frame CAN.ctl"/>
 						<Item Name="XNET Frame Type CAN.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Frame Type CAN.ctl"/>
 					</Item>
+					<Item Name="AIR Status.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/AIR Status.ctl"/>
+					<Item Name="BMS Telemetry.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/BMS Telemetry.ctl"/>
+					<Item Name="BPS Driver.vi" Type="VI" URL="../Formula Hybrid 2012 r1/BPS Driver.vi"/>
+					<Item Name="Calculate Thermistor Temp.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Calculate Thermistor Temp.vi"/>
+					<Item Name="Dash LED Status.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Dash LED Status.ctl"/>
+					<Item Name="DashDriverInputs.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Dashboard/DashDriverInputs.ctl"/>
+					<Item Name="Decode Car State.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Decode Car State.vi"/>
+					<Item Name="Decode Charging State.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Decode Charging State.vi"/>
+					<Item Name="Decode Inverter Command Modes.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Decode Inverter Command Modes.vi"/>
+					<Item Name="Decode Inverter State.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Decode Inverter State.vi"/>
+					<Item Name="Decode VSM.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Decode VSM.vi"/>
+					<Item Name="Find unique elements.vi" Type="VI" URL="../Testing Code/Find unique elements.vi"/>
+					<Item Name="FPGA Telemetry.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/FPGA Telemetry.ctl"/>
+					<Item Name="Global Data.vi" Type="VI" URL="../Formula Hybrid 2012 r1/Global Data.vi"/>
+					<Item Name="Inverter Run Modes.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Inverter Run Modes.ctl"/>
+					<Item Name="Inverter States.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Inverter States.ctl"/>
+					<Item Name="Lap Statistics.ctl" Type="VI" URL="../Lap Statistics.ctl"/>
+					<Item Name="MC Current.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Current.ctl"/>
+					<Item Name="MC Faults.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Faults.ctl"/>
+					<Item Name="MC Flux.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Flux.ctl"/>
+					<Item Name="MC Internal Voltages.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Internal Voltages.ctl"/>
+					<Item Name="MC Mod Index and Flux Weakening.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Mod Index and Flux Weakening.ctl"/>
+					<Item Name="MC Position.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Position.ctl"/>
+					<Item Name="MC State.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC State.ctl"/>
+					<Item Name="MC Temp 1.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Temp 1.ctl"/>
+					<Item Name="MC Temp 2.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Temp 2.ctl"/>
+					<Item Name="MC Temp 3.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Temp 3.ctl"/>
+					<Item Name="MC Torque.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Torque.ctl"/>
+					<Item Name="MC Voltage.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/MC Voltage.ctl"/>
+					<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
+						<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+					</Item>
+					<Item Name="Process Run Fault.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/MC/Process Run Fault.vi"/>
+					<Item Name="Reason for Shutdown.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Reason for Shutdown.ctl"/>
+					<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
+						<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+					</Item>
+					<Item Name="Scale Can Temp.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Can Temp.vi"/>
+					<Item Name="Scale Cell Balance.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Cell Balance.vi"/>
+					<Item Name="Scale Cell Temp.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Cell Temp.vi"/>
+					<Item Name="Scale Cell Voltage.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Cell Voltage.vi"/>
+					<Item Name="Scale Output ADXL345.vi" Type="VI" URL="../Formula Hybrid 2012 r1/SPI/ADXL345/Scale Output ADXL345.vi"/>
+					<Item Name="SDashLEDs.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Dashboard/SDashLEDs.ctl"/>
+					<Item Name="SPI Parameters.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/SPI/SPI Parameters.ctl"/>
+					<Item Name="Subsystem Status Message.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Vehicle Status/Subsystem Status Message.ctl"/>
+					<Item Name="Subsystem Status Severity.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Vehicle Status/Subsystem Status Severity.ctl"/>
+					<Item Name="Subsystem Status.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Vehicle Status/Subsystem Status.ctl"/>
+					<Item Name="TDMS Init.vi" Type="VI" URL="../Formula Hybrid 2012 r1/TDMS Init.vi"/>
+					<Item Name="VSM States.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/VSM States.ctl"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="FPGA" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
