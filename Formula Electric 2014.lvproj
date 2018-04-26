@@ -782,6 +782,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Test CAN Logger with TDMS.vi" Type="VI" URL="../Testing Code/Test CAN Logger with TDMS.vi"/>
 			<Item Name="Test CAN Logger.vi" Type="VI" URL="../Testing Code/Test CAN Logger.vi"/>
 			<Item Name="Test MC Heartbeat Message.vi" Type="VI" URL="../Formula Hybrid 2012 r1/Test MC Heartbeat Message.vi"/>
+			<Item Name="Transmit CAN Test.vi" Type="VI" URL="../Formula Hybrid 2012 r1/Transmit CAN Test.vi"/>
 		</Item>
 		<Item Name="Typedefs" Type="Folder">
 			<Item Name="AIR Status.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/AIR Status.ctl"/>
@@ -3943,10 +3944,6 @@ AddOutputFilter chunkFilter
 						<Item Name="niFPGA I32xI32 MAC - FXP.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/utilities/niFPGA I32xI32 MAC - FXP.vi"/>
 						<Item Name="niFPGA I32xI32 MAC+ MSB.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/utilities/niFPGA I32xI32 MAC+ MSB.vi"/>
 					</Item>
-					<Item Name="BPS Driver.vi" Type="VI" URL="../Formula Hybrid 2012 r1/BPS Driver.vi"/>
-					<Item Name="Dash LED Status.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Dash LED Status.ctl"/>
-					<Item Name="Scale Output ADXL345.vi" Type="VI" URL="../Formula Hybrid 2012 r1/SPI/ADXL345/Scale Output ADXL345.vi"/>
-					<Item Name="SPI Parameters.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/SPI/SPI Parameters.ctl"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="FPGA" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -3992,7 +3989,6 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="TDMS Init.vi" Type="VI" URL="../Formula Hybrid 2012 r1/TDMS Init.vi"/>
 		<Item Name="Temp Calibration.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/Temp Calibration.vi"/>
-		<Item Name="Transmit CAN Test.vi" Type="VI" URL="../Formula Hybrid 2012 r1/Transmit CAN Test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_XNET Convert Time LV to U64.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/_XNET Convert Time LV to U64.vi"/>
