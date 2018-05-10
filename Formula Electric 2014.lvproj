@@ -4147,9 +4147,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Scale Cell Balance.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Cell Balance.vi"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
