@@ -46,7 +46,6 @@ FPGA	TPS	rTPS2Max	rTPS2Max
 FPGA	TPS	rTPS2Min	rTPS2Min
 FPGA	TPS	rTPS2Unscaled	rTPS2Unscaled
  	 	SCalibrationFileName	SCalibrationFileName
-FPGA	Cooling	TCellMaxFanThreshold	TCellMaxFanThreshold
 Telemetry	FPGA	tFPGATelemetryPeriod	tFPGATelemetryPeriod
 FPGA	Lap Timing	tLapMin	tLapMin
 FPGA	Lap Timing	tLapReference	tLapReference
