@@ -3950,10 +3950,6 @@ AddOutputFilter chunkFilter
 						<Item Name="IP SPI&amp;I2C.lvlib" Type="Library" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Library/IP SPI&amp;I2C.lvlib"/>
 						<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 					</Item>
-					<Item Name="SPI Parameters.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/SPI/SPI Parameters.ctl"/>
-					<Item Name="Scale Output ADXL345.vi" Type="VI" URL="../Formula Hybrid 2012 r1/SPI/ADXL345/Scale Output ADXL345.vi"/>
-					<Item Name="BPS Driver.vi" Type="VI" URL="../Formula Hybrid 2012 r1/BPS Driver.vi"/>
-					<Item Name="Dash LED Status.ctl" Type="VI" URL="../Formula Hybrid 2012 r1/Dash LED Status.ctl"/>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="FPGA" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
