@@ -559,6 +559,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Scale Cell Voltage.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Cell Voltage.vi"/>
 			<Item Name="Send BMS Telemetry.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Send BMS Telemetry.vi"/>
 			<Item Name="Temps OK-PO3.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Temps OK-PO3.vi"/>
+			<Item Name="InternalResistance.vi" Type="VI" URL="../InternalResistance.vi"/>
 		</Item>
 		<Item Name="CAN" Type="Folder">
 			<Item Name="TX Library" Type="Folder">
@@ -3947,8 +3948,14 @@ AddOutputFilter chunkFilter
 						<Item Name="niFPGA BW CU Order 2 (32-bit).vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/measure/butterworth/templates/niFPGA BW CU Order 2 (32-bit).vi"/>
 						<Item Name="niFPGA I32xI32 MAC - FXP.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/utilities/niFPGA I32xI32 MAC - FXP.vi"/>
 						<Item Name="niFPGA I32xI32 MAC+ MSB.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Analysis/utilities/niFPGA I32xI32 MAC+ MSB.vi"/>
-						<Item Name="IP SPI&amp;I2C.lvlib" Type="Library" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Library/IP SPI&amp;I2C.lvlib"/>
-						<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+						<Item Name="Private Data (SPI).ctl" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Type Def/Private Data (SPI).ctl"/>
+						<Item Name="Calculate Divider.vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Public/Calculate Divider.vi"/>
+						<Item Name="Configure Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Configure Port (SPI).vi"/>
+						<Item Name="Write Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Write Port (SPI).vi"/>
+						<Item Name="Arm Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Arm Port (SPI).vi"/>
+						<Item Name="Read Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Read Port (SPI).vi"/>
+						<Item Name="Initialize Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/Initialize Port (SPI).vi"/>
+						<Item Name="IP Port (SPI).vi" Type="VI" URL="/&lt;vilib&gt;/IEDriver/SPIandI2C/FPGA/Private/IP Port (SPI).vi"/>
 					</Item>
 				</Item>
 				<Item Name="Build Specifications" Type="Build">
