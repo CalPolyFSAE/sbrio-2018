@@ -558,6 +558,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Send BMS Telemetry.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Send BMS Telemetry.vi"/>
 			<Item Name="Temps OK-PO3.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Temps OK-PO3.vi"/>
 			<Item Name="InternalResistance.vi" Type="VI" URL="../InternalResistance.vi"/>
+			<Item Name="Internal Resistance2.vi" Type="VI" URL="../Internal Resistance2.vi"/>
 		</Item>
 		<Item Name="CAN" Type="Folder">
 			<Item Name="TX Library" Type="Folder">
@@ -4147,6 +4148,9 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Scale Cell Balance.vi" Type="VI" URL="../Formula Hybrid 2012 r1/CAN/BMS/Scale Cell Balance.vi"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Real-Time Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
