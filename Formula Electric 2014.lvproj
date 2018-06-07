@@ -491,7 +491,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/home/lvuser/natinst/bin</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -764,6 +764,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Throttle to Torque Percent.vi" Type="VI" URL="../Formula Hybrid 2012 r1/Throttle to Torque Percent.vi"/>
 			</Item>
 			<Item Name="Current Limiter.vi" Type="VI" URL="../Formula Hybrid 2012 r1/Remote Calibration/Current Limiter.vi"/>
+			<Item Name="check for perc change.vi" Type="VI" URL="../check for perc change.vi"/>
 			<Item Name="MC Control Loop.vi" Type="VI" URL="../Formula Hybrid 2012 r1/MC Control Loop.vi"/>
 			<Item Name="MC State Machine.lvsc" Type="LVStatechart" URL="../Formula Hybrid 2012 r1/MC State Machine.lvsc"/>
 			<Item Name="Power Limiter.vi" Type="VI" URL="../Formula Hybrid 2012 r1/Power Limiter.vi"/>
@@ -4170,7 +4171,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{33AF35AE-0C97-4FAB-A93F-D4FDD05E09A8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
